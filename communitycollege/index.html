@@ -1,23 +1,158 @@
----
-layout: default
----
-
-<div class="home">
-
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
-</div>
+<!DOCTYPE HTML>
+<head>
+<title>Make Our Community Colleges Free</title>
+  <link rel="stylesheet" href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/bootstrap.css">
+  <link href="css/hover.css" rel="stylesheet" media="all">
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+  <div class = "nav navbar-fixed-top">
+    <ul class = "pull-left">
+      <a href="#main" class="button hvr-underline-from-left">MAIN</a>
+      &nbsp
+      &nbsp
+      <a href="#petition" class="button hvr-underline-from-left">PETITION</a>
+      &nbsp
+      &nbsp
+      <a href="#moreinfo" class="button hvr-underline-from-left">MORE INFO</a>
+    </ul>
+    <ul class = "pull-right">
+      <a href="#contactus" class="button hvr-underline-from-left">CONTACT US</a>
+    </ul>
+  </div>
+  <div id ="#main" class="jumbotron">
+    <h1>MAKE OUR COMMUNITY COLLEGES FREE</h1>
+    <p>HELP US MAKE CHANGE NOW</p>
+  </div>
+  
+  <div id="#contactus" class="contactus">
+  <div class="row">
+  <h1>THE TEAM</h1>
+    <div class="col-md-4">
+     <h3>Clemente Ferrer</h3>
+     <p>role / other info</p>
+     <p><a href="#">email</a></p>
+    </div>
+    <div class="col-md-4">
+     <h3>Isaiah Russell</h3>
+     <p>role / other info</p>
+     <p><a href="#">email</a></p>
+    </div>
+    <div class="col-md-4">
+     <h3>Anthony Bocanegra</h3>
+     <p>role / other info</p>
+     <p><a href="#">email</a></p>
+    </div>
+  </div>
+  </div>
+</body>
+</HTML>
+<style>
+  a:link {
+    color: white;
+    text-decoration: none;
+  }
+  a:visited {
+    color: white;
+    text-decoration: none;
+  }
+  a:hover {
+    color: #ffcccc;
+    text-decoration: none;
+  }
+  a:active {
+    color: white;
+    text-decoration: none;
+  }
+  .nav {
+   background-color: white;
+   height: 8%;
+  }
+  .button {
+    display: inline-block;
+    padding: 15px;
+    background-color: #ff0000;
+    text-decoration: none;
+    color: white;
+  }
+  .pull-left {
+    position: relative;
+    left: 5%;
+  }
+  .pull-right {
+    position: relative;
+    right: 5%;
+  }
+  .hvr-underline-from-left {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    position: relative;
+    overflow: hidden;
+  }
+  .hvr-underline-from-left:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    right: 100%;
+    bottom: 0;
+    background: #ffcccc;
+    height: 4px;
+    -webkit-transition-property: right;
+    transition-property: right;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+  }
+  .hvr-underline-from-left:hover:before, .hvr-underline-from-left:focus:before, .hvr-underline-from-left:active:before {
+    right: 0;
+  }
+  .jumbotron {
+    background-image:url('https://upload.wikimedia.org/wikipedia/commons/0/0f/Corpus_Christi_College_New_Court,_Cambridge,_UK_-_Diliff.jpg');
+    height: 750px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%
+  }
+  .jumbotron h1 {
+    color: #fff;
+    font-size: 48px;  
+    font-weight: bold;
+    margin-left: 7%;
+    color: #ff1a1a;
+    position: relative;
+    top: 10%;
+  }
+  .jumbotron p {
+    font-size: 20px;
+    color: #fff;
+    margin-left: 7%;
+    color: #ff4d4d;
+        position: relative;
+    top: 10%;
+  }
+  .contactus {
+    background-color: #ff4d4d;
+    left: 2%;
+  }
+  .contactus h3 {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  .contactus a {
+    color: #ffffff;
+  }
+  .contactus .col-md-4 {
+    left: 2%;
+  }
+  .contactus h1 {
+    position: relative;
+    left: 3%;
+  }
+</style>
